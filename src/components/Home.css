@@ -1,0 +1,29 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: '"Montserrat", sans-serif',
+}
+
+.containerDescription, .containerNavLinks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerNavLinks {
+    margin: 5vh 5vh 5vh 5vh; 
+}
+
+.containerDescription{
+    margin: 10vh 25vh 10vh 25vh;
+}
+
+
+.HomeDescription > h5 {
+    
+}
+.containerPhoto > img {
+    width: 60vh;
+}
