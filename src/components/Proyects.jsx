@@ -1,4 +1,7 @@
 import React from 'react'
+import Footer from './Footer'
+import Header from './Header'
+
 
 const Title = () => {
     return(
@@ -22,9 +25,16 @@ const RedirectProyect = () => {
 
 const Proyects = () => {
     return(
+        
         <div>
+            <div>
+                <Header />
+            </div>
             <Title />
             <RedirectProyect />
+            <div>
+                <Footer />
+            </div>
         </div>
     )
 }

@@ -1,16 +1,13 @@
 import React from 'react'
-
 import Photo from "../img/portfolio-photo-test-large.png"
 import GitHubIcon from "../img/icon-github.png"
 import LinkedinIcon from "../img/icon-ldin.png"
 import './Home.css'
-import GoHomeButton from './GoHomeButton'
-import NavigationBar from './NavigationBar'
 import Footer from './Footer'
+import Header from './Header'
 
 const homeDescriptionStyles = {
     fontFamily: '"Montserrat", sans-serif',
-    // letterSpacing: '0.5px',
     marginTop: '20vh',
 }
 
@@ -22,7 +19,9 @@ const h5Styles = {
 const h1Styles = {
     fontFamily: '"Montserrat", sans-serif',
     fontSize: '100px',
+    fontWeight: 'bold',
 }
+
 const containerIcon = {
     display: 'flex',
     justifyContent: 'spaceAround',
@@ -70,14 +69,11 @@ const Home = () => {
     return (
         <div>
             <div>
-                <div className='containerNavLinks'>
-                    <GoHomeButton />
-                    <NavigationBar />
-                </div>
-                <div className='containerDescription'>
-                    <HomeDescription />
-                    <PortfolioPhoto />
-                </div>
+                <Header />
+            </div>
+            <div className='containerDescription'>
+                <HomeDescription />
+                <PortfolioPhoto />
             </div>
             <div>
                 <Footer />

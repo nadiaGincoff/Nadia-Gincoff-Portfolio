@@ -1,23 +1,28 @@
 import React from 'react';
+import Zoom from 'react-reveal/Zoom';
 
 const footerContainerStyle = {
     marginLeft: '5vh',
     marginRight: '5vh',
     borderTop: '2px solid black',
     paddingTop: '5vh',
-    height: '100px'
+
 }
 
 const childContainerStyle = {
     fontFamily: '"Montserrat", sans-serif',
     color: 'black',
     inline: 'none',
+    fontSize: '20px',
+    marginBottom: '5vh'
 }
 
 const Footer = () => {
     return ( 
         <div style={ footerContainerStyle }>
-            <div style={ childContainerStyle }><span>nadia.gincoff@gmail.com</span></div>
+            <Zoom>
+                <div style={ childContainerStyle }><span>nadia.gincoff@gmail.com</span></div>
+            </Zoom>
         </div>
     );
 }

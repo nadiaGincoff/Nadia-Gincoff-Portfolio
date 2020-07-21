@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom'
 import logo from '../img/HomeLogo.png'
 
 const logoStyle = {
-    position: 'fixed',
-    width: '100px'
+    width: '80px'
 }
 
 const GoHomeButton = () => {

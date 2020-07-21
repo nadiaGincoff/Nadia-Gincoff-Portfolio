@@ -3,6 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
 body {
     font-family: '"Montserrat", sans-serif',
 }
@@ -20,10 +21,6 @@ body {
     margin: 10vh 25vh 10vh 25vh;
 }
 
-
-.HomeDescription > h5 {
-    
-}
 .containerPhoto > img {
     width: 60vh;
 }
