@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components/Home";
 import AboutMe from "./components/AboutMe";
 import Proyects from "./components/Proyects";
-import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 
 const App = () => {

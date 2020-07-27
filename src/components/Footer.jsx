@@ -4,14 +4,14 @@ import Zoom from 'react-reveal/Zoom';
 const footerContainerStyle = {
     marginLeft: '5vh',
     marginRight: '5vh',
-    borderTop: '2px solid black',
+    borderTop: '2px solid white',
     paddingTop: '5vh',
 
 }
 
 const childContainerStyle = {
     fontFamily: '"Montserrat", sans-serif',
-    color: 'black',
+    color: 'white',
     inline: 'none',
     fontSize: '20px',
     marginBottom: '5vh'

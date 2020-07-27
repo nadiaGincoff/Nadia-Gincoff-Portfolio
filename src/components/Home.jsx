@@ -1,7 +1,7 @@
 import React from 'react'
-import Photo from "../img/portfolio-photo-test-large.png"
-import GitHubIcon from "../img/icon-github.png"
-import LinkedinIcon from "../img/icon-ldin.png"
+import Photo from "../img/portfolio-photo-test-large3.png"
+import GitHubIcon from "../img/icon-github2.png"
+import LinkedinIcon from "../img/icon-ldin2.png"
 import './Home.css'
 import Footer from './Footer'
 import Header from './Header'
@@ -19,7 +19,7 @@ const h5Styles = {
 const h1Styles = {
     fontFamily: '"Montserrat", sans-serif',
     fontSize: '100px',
-    fontWeight: 'bold',
+    fontWeight: '900',
 }
 
 const containerIcon = {
@@ -53,8 +53,7 @@ const HomeDescription = () => {
             <div style={ homeDescriptionStyles}>
                 <span style={ h5Styles}>Hello World!, I'm Nadia Gincoff.</span>
                 <br />
-                <span style={ h1Styles }>Front-end</span>
-                <br />
+                <span style={ h1Styles }>Front-end </span>
                 <span style={ h1Styles }>Developer</span>
             </div>
              <div style={containerIcon}>

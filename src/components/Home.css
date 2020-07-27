@@ -5,7 +5,9 @@
 }
 
 body {
-    font-family: '"Montserrat", sans-serif',
+    font-family: '"Montserrat", sans-serif';
+    color: #F8F8FF;
+    background: black;
 }
 
 .containerDescription, .containerNavLinks {
@@ -18,7 +20,7 @@ body {
 }
 
 .containerDescription{
-    margin: 10vh 25vh 10vh 25vh;
+    margin: 5vh 25vh 10vh 25vh;
 }
 
 .containerPhoto > img {
