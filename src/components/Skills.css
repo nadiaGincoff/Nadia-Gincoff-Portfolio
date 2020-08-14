@@ -2,3 +2,45 @@
     display: flex;
     flex-direction: space-between;
 }
+
+.titleDescription {
+    width: 65%;
+    font-weight: 600;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.iconSkills {
+    width: 4em;
+    margin-right: 3%;
+}
+
+.iconContainer {
+    display: flex;
+    flex-direction: space-around;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-bottom: 17%;
+}
+
+@media screen and (max-width: 600px) {
+    .titleDescription {
+        font-size: 1.5em;
+        margin-top: 3em;
+    }
+    .iconSkills {
+        width: 3rem;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) { 
+    .titleDescription {
+        font-size: 2em;
+        margin-top: 3em;
+    }
+    .iconSkills {
+        width: 3em;
+    }
+}

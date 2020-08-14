@@ -1,0 +1,41 @@
+.aboutContainer {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 7%;
+    line-height: 1.6;
+    font-family: 'Montserrat';
+}
+
+.aboutTitleDescription {
+    width: 65%;
+    font-weight: 600;
+}
+
+.aboutDescription {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-block-end: 0px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .aboutTitleDescription {
+        font-size: 1.5em;
+        margin-top: 3em;
+    }
+    .aboutDescription {
+        font-size: 0.8em;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) { 
+    .aboutTitleDescription {
+        font-size: 2em;
+        margin-top: 3em;
+    }
+    .aboutDescription {
+        font-size: 1em;    
+    }
+}

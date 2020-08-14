@@ -1,27 +1,17 @@
 import React from 'react';
 import Zoom from 'react-reveal/Zoom';
+import './Footer.css'
 
-const footerContainerStyle = {
-    marginLeft: '5vh',
-    marginRight: '5vh',
-    borderTop: '2px solid white',
-    paddingTop: '5vh',
-
-}
-
-const childContainerStyle = {
-    fontFamily: '"Montserrat", sans-serif',
-    color: 'white',
-    inline: 'none',
-    fontSize: '20px',
-    marginBottom: '5vh'
-}
 
 const Footer = () => {
+    const email = 'nadia.gincoff@gmail.com';
+
     return ( 
-        <div style={ footerContainerStyle }>
+        <div className='footerContainerStyle'>
             <Zoom>
-                <div style={ childContainerStyle }><span>nadia.gincoff@gmail.com</span></div>
+                <div className='childContainerStyle'>
+    <span className='span'>{email}</span>
+                </div>
             </Zoom>
         </div>
     );

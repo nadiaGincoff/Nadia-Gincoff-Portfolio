@@ -1,0 +1,26 @@
+.footerContainerStyle {
+    margin-left: 5vh;
+    margin-right: 5vh;
+    border-top: 2px solid rgba(212, 212, 212);
+    padding-top: 1vh;
+}
+
+.childContainerStyle {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    inline-size: none;
+    font-size: 15px;
+    margin-bottom: 1em;
+}
+
+@media screen and (max-width: 600px) {
+    .footerContainerStyle {
+        margin-left: 1em;
+        margin-right: 1em;
+        border-top: 0.5px solid  rgba(212, 212, 212, 0.555);
+     }
+    .childContainerStyle {
+        font-size: 0.8em;
+        color: rgb(212, 212, 212);
+    }
+}

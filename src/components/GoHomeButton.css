@@ -1,0 +1,11 @@
+.logoStyle {
+    width: 80px;
+    border-bottom: 2px solid white;
+}
+
+@media screen and (max-width: 600px) {
+    .logoStyle {
+        width: 3.5em;
+        margin-top: -0.9em;
+    }
+}

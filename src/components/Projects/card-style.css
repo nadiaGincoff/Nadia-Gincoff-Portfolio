@@ -1,0 +1,86 @@
+.card {
+    width: 18em;
+    height: auto;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(54, 42, 42);
+    padding: 0.1em;
+}
+
+.card:hover {
+    box-shadow: 1px 5px 10px 0.5px rgba(90, 90, 90, 0.534) !important;
+}
+
+.card-body {
+    background-color: white;
+    visibility: hidden;
+    transition: all ease-in-out 0.2s;
+    padding: 0.5rem 0 !important;
+    height: 0;
+}
+
+.hover-to-show {
+    overflow: hidden;
+    cursor: pointer;
+    padding-top: 2.5rem;
+}
+
+.hover-to-show:hover .card-body  {
+    display: block;
+    visibility: visible;
+    height: 10em;
+}
+
+.card-title {
+    font-size: 1.25rem;
+}
+
+.card-text { 
+    color: black;
+    font-size: .9rem;
+    padding: 0.4rem 1.9rem;
+}
+
+.container-fluid .row {
+    padding-top: 6rem;
+    margin-bottom: 25em;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+.card-img-top {
+    transform: scale(1);
+    transition: transform 0.5s ease;
+}
+
+.card-img-top:hover {
+    transform: scale(1.8);
+}
+
+
+@media screen and (max-width: 600px){
+    .card {
+        width: 20.5em;
+       margin-left: 0.5em;
+       margin-bottom: 1.5em;
+    }
+    .card-body {
+        visibility: visible;
+        height: 6em;
+    }
+    .card-title {
+        font-size: 1em;
+    }
+    .container-fluid .row {
+        padding-top: 4rem;
+
+    }
+    .hover-to-show {
+        padding-top: 1rem;
+    }
+    .container-fluid .row {
+        margin-bottom: 5em;
+    }
+
+}

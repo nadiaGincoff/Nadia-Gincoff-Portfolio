@@ -6,23 +6,6 @@ import Modal from 'react-modal'
 import './NavigationBar.css'
 import Fade from 'react-reveal/Fade';
 
-const iconStyle = {
-    width: '40px',
-   
-}
-
-const buttonStyle = {
-    left: 0,
-    right: 0,
-    bottom: 0,
-    cursor: 'pointer'
-}
-   
-const CloseButton = {
-    paddingTop: '5vh',
-    marginLeft: '96%',
-    cursor: 'pointer'
-}
 
 Modal.setAppElement('#root')
 
@@ -31,36 +14,31 @@ const NavigationBar = () => {
 
     return (
         <div>
-            <div style={buttonStyle}>
-                <img src={Icon} style={iconStyle} onClick={() => setIsMenuOpen(true)}/>
+            <div className='buttonStyle'>
+                <img src={Icon} alt='icon-menu' className='iconStyle' onClick={() => setIsMenuOpen(true)}/>
             </div>
             
-            <Modal 
-                isOpen={isMenuOpen} 
-                onRequestClose={() => setIsMenuOpen(false)} 
-                closeTimeoutMS={ 2000 }
-                className='modalStyle'
-            >
-                <div style={CloseButton}> 
-                    <img src={CloseIcon} style={iconStyle} onClick={() => setIsMenuOpen(false)}/>
+            <Modal isOpen={isMenuOpen} onRequestClose={() => setIsMenuOpen(false)} closeTimeoutMS={2000} className='modalStyle'>
+                <div className='CloseButton'> 
+                    <img src={CloseIcon} alt='icon-close-menu' className='iconStyle' onClick={() => setIsMenuOpen(false)}/>
                 </div>
                     <Fade right cascade>
                         <div className='modalContent'>
-                            <Link to='/' style={{ textDecoration: 'none' }} >
-                               <p className='modalItem'>HOME</p>
+                            <Link to='/' style={{textDecoration: 'none'}} >
+                               <p className='modalItem'>INICIO</p>
                             </Link>
-                            <Link to='/about' style={{ textDecoration: 'none' }} >
-                               <p className='modalItem'>ABOUT ME</p>
+                            <Link to='/about' style={{textDecoration: 'none'}} >
+                               <p className='modalItem'>SOBRE MI</p>
                             </Link>
-                            <Link to='/proyects' style={{ textDecoration: 'none' }} >
-                                <p className='modalItem'>PROYECTS</p>
+                            <Link to='/projects' style={{textDecoration: 'none'}} >
+                                <p className='modalItem'>PROYECTOS</p>
                             </Link>   
-                            <Link to='/contact' style={{ textDecoration: 'none' }} >
-                                <p className='modalItem'>CONTACT</p>
+                            <Link to='/contact' style={{textDecoration: 'none'}} >
+                                <p className='modalItem'>CONTACTO</p>
                             </Link>
                         </div>
                     </Fade>
-                </Modal>
+            </Modal>
         </div>
     )
 }

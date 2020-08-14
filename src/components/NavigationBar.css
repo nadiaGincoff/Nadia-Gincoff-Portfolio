@@ -1,3 +1,5 @@
+
+
 .ReactModal__Overlay {
     opacity: 0;
     transform: translateX(-100px);
@@ -15,12 +17,12 @@
 }
 
 .modalStyle{
-  background-color: black;
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  border: none;
-  outline: none;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    border: none;
+    outline: none;
 }
 
 .modalContent {
@@ -31,7 +33,7 @@
     text-align: center;
     font-weight: 900;
     font-family: 'Montserrat';
-    font-size: 50px;
+    font-size: 3em;
 }
 
 .modalItem {
@@ -52,3 +54,38 @@
   transition: width .3s;
 }
 
+.iconStyle {
+  width: 40px;
+
+}
+
+.buttonStyle {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+ 
+.CloseButton {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2em;
+  padding-top: 2em;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .iconStyle {
+    width: 2em;
+  }
+  .CloseButton {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1em;
+    padding-top: 1.5em;
+    
+  }
+  .modalContent { 
+    font-size: 1.5em;
+  }
+}

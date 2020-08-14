@@ -6,59 +6,26 @@ import './Home.css'
 import Footer from './Footer'
 import Header from './Header'
 
-const homeDescriptionStyles = {
-    fontFamily: '"Montserrat", sans-serif',
-    marginTop: '20vh',
-}
-
-const h5Styles = {
-    fontSize: '25px',
-    paddingLeft: '10px'
-}
-
-const h1Styles = {
-    fontFamily: '"Montserrat", sans-serif',
-    fontSize: '100px',
-    fontWeight: '900',
-}
-
-const containerIcon = {
-    display: 'flex',
-    justifyContent: 'spaceAround',
-}
-
-const icon = {
-    width: '40px',
-    paddingLeft: '10px'
-}
-
-const iconSeparation = {
-    width: '40px',
-    paddingLeft: '10px'
-}
-
-
 const PortfolioPhoto = () => {
     return (
         <div className='containerPhoto'>
-            <img src={Photo} />
+            <img src={Photo} alt='HomesPhoto'/>
         </div>
     )
 }
 
-
 const HomeDescription = () => {
     return (
         <div>
-            <div style={ homeDescriptionStyles}>
-                <span style={ h5Styles}>Hello World!, I'm Nadia Gincoff.</span>
+            <div className='homeDescriptionStyles'>
+                <span className='h5Styles'>Hola mundo!, soy Nadia Gincoff.</span>
                 <br />
-                <span style={ h1Styles }>Front-end </span>
-                <span style={ h1Styles }>Developer</span>
+                <span className='h1Styles'>Front-end Developer</span>
+                {/* <span className='h1Styles'></span> */}
             </div>
-             <div style={containerIcon}>
-                <a href='https://github.com/nadiaGincoff' target='_blank'><img src={GitHubIcon} style={icon}></img></a>
-                <a href='https://www.linkedin.com/in/nadia-ginc/' target='_blank'><img src={LinkedinIcon} style={iconSeparation}></img></a>
+             <div className='containerIcon'>
+                <a href='https://github.com/nadiaGincoff' target='_blank' rel='noopener noreferrer'><img src={GitHubIcon} alt='icon-github' className='icon'></img></a>
+                <a href='https://www.linkedin.com/in/nadia-ginc/' target='_blank' rel='noopener noreferrer'><img src={LinkedinIcon} alt='icon-lkdinL.{}65' className='iconSeparation'></img></a>
              </div>
         </div>
     )
@@ -71,8 +38,7 @@ const Home = () => {
                 <Header />
             </div>
             <div className='containerDescription'>
-                <HomeDescription />
-                <PortfolioPhoto />
+                <HomeDescription />                <PortfolioPhoto />
             </div>
             <div>
                 <Footer />

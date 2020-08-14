@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components/Home";
 import AboutMe from "./components/AboutMe";
-import Proyects from "./components/Proyects";
+import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact";
 
 const App = () => {
@@ -13,8 +13,8 @@ const App = () => {
         <Route path='/contact'>
           <Contact />
         </Route>
-        <Route path='/proyects'>
-          <Proyects />
+        <Route path='/projects'>
+          <Projects />
         </Route>
         <Route path='/about'>
           <AboutMe />
