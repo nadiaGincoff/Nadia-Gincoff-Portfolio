@@ -1,0 +1,102 @@
+.containerInfo {
+    margin-top: 8%;
+    line-height: 1.6;
+  
+}
+
+.titleDescription {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 2.5em;
+    /* width: 65%; */
+    font-weight: 900;
+}
+
+.description {
+    font-family: 'Montserrat';
+    font-size: 0.9rem;
+    /* width: 65%; */
+    font-weight: 300;
+    text-align: center;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-block-end: 0px;
+    margin-bottom: 1.5em;
+}
+
+.container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.containerLeft {
+    background: url("../img/contact2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* align-self: left; */
+    width: 100%;
+    height: 50vh;
+    margin-top: 5em;
+}
+
+.containerRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    width: 100%;
+    height: 50vh;
+    margin-top: 12em;
+    padding-left: 10em;
+
+}
+
+.containerIconContact {
+    display: flex;
+    justify-content: center;
+    /* justify-content: space-around; */
+}
+
+.icon {
+    width: 40px;
+}
+
+.iconSeparation {
+    width: 40px;
+    margin-left: 1em;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    .containerLeft {
+        display: none;
+    }
+    .containerRight {
+        margin-left: 6%;
+        margin-right: 6%;
+        padding-left: 0;
+        margin-top: 0;
+        text-align: left;
+    }
+    .titleDescription {
+        text-align: left;
+        font-size: 1.5em;
+        margin-top: 1.5em;
+    }
+    .description {
+        width: 87%;
+        text-align: left;
+        font-size: 0.8em;
+        margin-bottom: 3em;
+    }
+    .containerIcon {
+        justify-content: left;
+    }
+
+}

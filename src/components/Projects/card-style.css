@@ -1,19 +1,36 @@
+.containerTitle {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 7%;
+    line-height: 1.6;
+    font-family: Montserrat;
+}
+
+.projectTitle {
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
 .card {
-    width: 18em;
+    width: 20em;
+    border:none;
+    margin-right: 2.5em;
     height: auto;
     font-family: "Montserrat", sans-serif;
     color: rgb(54, 42, 42);
-    padding: 0.1em;
+    background-color: #ffffff;
 }
 
 .card:hover {
-    box-shadow: 1px 5px 10px 0.5px rgba(90, 90, 90, 0.534) !important;
+    -webkit-box-shadow: 0px 5px 20px -10px rgba(133, 133, 133, 0.57);
+    -moz-box-shadow: 0px 5px 20px -10px rgba(112, 112, 112, 0.57);
+    transition: all 0.3s ease 0s;
 }
 
 .card-body {
-    background-color: white;
+    background-color: #ffffff;
     visibility: hidden;
-    transition: all ease-in-out 0.2s;
+    transition: height 0.5s ease 0s;
     padding: 0.5rem 0 !important;
     height: 0;
 }
@@ -21,13 +38,13 @@
 .hover-to-show {
     overflow: hidden;
     cursor: pointer;
-    padding-top: 2.5rem;
+    padding-top: 1.5rem;
 }
 
 .hover-to-show:hover .card-body  {
     display: block;
     visibility: visible;
-    height: 10em;
+    height: 12em;
 }
 
 .card-title {
@@ -41,7 +58,7 @@
 }
 
 .container-fluid .row {
-    padding-top: 6rem;
+    padding-top:3rem;
     margin-bottom: 25em;
 }
 
@@ -57,24 +74,53 @@
 .card-img-top:hover {
     transform: scale(1.8);
 }
+.icon {
+    padding-bottom: 0.5rem;
+}
 
+.buttonCard {
+    border: none;
+    background: black;
+    color: #ffffff !important;
+    font-weight: 100;
+    padding: 1em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+}
+
+.buttonCard:hover {
+    color: #404040 !important;
+    font-weight: 700 !important;
+    letter-spacing: 3px;
+    background: none;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+}
 
 @media screen and (max-width: 600px){
+    .containerTitle {
+        margin-top: 4.5em;
+    }
     .card {
         width: 20.5em;
-       margin-left: 0.5em;
-       margin-bottom: 1.5em;
+        margin-left: 7%;
+        margin-bottom: 2em;
     }
     .card-body {
         visibility: visible;
-        height: 6em;
+        height: auto;
     }
     .card-title {
         font-size: 1em;
     }
     .container-fluid .row {
         padding-top: 4rem;
-
     }
     .hover-to-show {
         padding-top: 1rem;
@@ -82,5 +128,23 @@
     .container-fluid .row {
         margin-bottom: 5em;
     }
+    .projectTitle {
+        font-size: 1.5em;
+    }
 
+}
+
+@media screen and (min-width: 600px) and (max-width: 1300px) {
+    .card {
+        display: flex;
+        margin-bottom: 1em;
+    }
+    .col-md-3 {
+        margin-left: 4em;
+        margin-right: 4em;
+    }
+    .container-fluid .row {
+        margin-bottom: 5em;
+    }
+    
 }

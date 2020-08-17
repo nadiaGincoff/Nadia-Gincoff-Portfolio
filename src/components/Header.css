@@ -1,14 +1,13 @@
 .containerHeader {
-        margin-top: 2em;
-        display: flex;
-        justify-content: space-between;
-        margin-left: 2em;
-        margin-right: 2em;
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2em;
+    margin-right: 2em;
 }
 
-
 @media screen and (max-width: 600px) {
-        .containerHeader {
-        margin: 1.5em 1em 1em 1em;
-        }
+    .containerHeader {
+    margin: 1.5em 1em 1em 1em;
+    }
 }

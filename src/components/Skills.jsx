@@ -4,7 +4,7 @@ import './Skills.css'
 const Title = () => {
     return(
         <div>
-            <h1 className='titleDescription'>Mis habilidades</h1>
+            <h1 className='title'>Mis habilidades</h1>
         </div>
     )
 }

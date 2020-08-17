@@ -1,6 +1,6 @@
 import React from 'react';
 import './card-style.css'
-import GitHubIcon from "../../img/icon-github2.png"
+import GitHubIcon from "../../img/icon-github.png"
 //import LinkedinIcon from "../img/icon-ldin2.png"
 
 const Card = (props) => {
@@ -13,8 +13,8 @@ const Card = (props) => {
                 <h4 className="card-title">{props.title}</h4>
                 <div className="card-body text-dark">
                     <p className="card-text text-secondary">{props.description}</p>
-                    <a href='{props.hrefGitHub}' target='_blank' rel='noopener noreferrer'><img src={GitHubIcon} alt='icon-github' className='icon'></img></a>
-                    <a href='{props.showMore}' target='_blank' rel='noopener noreferrer'><img src={GitHubIcon} alt='icon-github' className='icon'></img></a>
+                    <a className="buttonCard" href="add-website-here" target="_blank" rel="nofollow noopener">Git-Hub</a>
+                    <a className="buttonCard" href="add-website-here" target="_blank" rel="nofollow noopener">Ver más</a>
                 </div>
             </div> 
         </div>

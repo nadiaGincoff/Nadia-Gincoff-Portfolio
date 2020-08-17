@@ -3,9 +3,8 @@
     flex-direction: space-between;
 }
 
-.titleDescription {
-    width: 65%;
-    font-weight: 600;
+.title {
+    font-size: 2.5em;
     font-weight: 600;
     line-height: 1.6;
 }
@@ -22,11 +21,11 @@
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    margin-bottom: 17%;
+    margin-bottom: 25%;
 }
 
 @media screen and (max-width: 600px) {
-    .titleDescription {
+    .title {
         font-size: 1.5em;
         margin-top: 3em;
     }
@@ -36,7 +35,7 @@
 }
 
 @media (min-width: 600px) and (max-width: 1024px) { 
-    .titleDescription {
+    .title {
         font-size: 2em;
         margin-top: 3em;
     }

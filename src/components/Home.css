@@ -34,7 +34,7 @@ body {
 }
 
 .h5Styles {
-    font-size: 1.5em;
+    font-size: 1.2em;
     padding-left: 10px;
 }
 
@@ -54,7 +54,7 @@ body {
     padding-left: 10px;
 }
 
-.iconSeparation {
+.iconSpace {
     width: 40px;
     padding-left: 10px;
 }
@@ -94,7 +94,7 @@ body {
         margin-left: -0.5em;
     }
     
-    .iconSeparation {
+    .iconSpace {
         width: 2em;
         padding-left: 10px;
     }
