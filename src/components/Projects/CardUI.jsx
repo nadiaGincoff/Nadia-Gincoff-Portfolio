@@ -13,8 +13,8 @@ const Card = (props) => {
                 <h4 className="card-title">{props.title}</h4>
                 <div className="card-body text-dark">
                     <p className="card-text text-secondary">{props.description}</p>
-                    <a className="buttonCard" href="add-website-here" target="_blank" rel="nofollow noopener">Git-Hub</a>
-                    <a className="buttonCard" href="add-website-here" target="_blank" rel="nofollow noopener">Ver más</a>
+                    <a className="buttonCard" href={props.github} target="_blank" rel="nofollow noopener">Git-Hub</a>
+                    <a className="buttonCard" href={props.plus} target="_blank" rel="nofollow noopener">Ver más</a>
                 </div>
             </div> 
         </div>

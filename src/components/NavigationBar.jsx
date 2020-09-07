@@ -17,7 +17,6 @@ const NavigationBar = () => {
             <div className='buttonStyle'>
                 <img src={Icon} alt='icon-menu' className='iconStyle' onClick={() => setIsMenuOpen(true)}/>
             </div>
-            
             <Modal isOpen={isMenuOpen} onRequestClose={() => setIsMenuOpen(false)} closeTimeoutMS={2000} className='modalStyle'>
                 <div className='CloseButton'> 
                     <img src={CloseIcon} alt='icon-close-menu' className='iconStyle' onClick={() => setIsMenuOpen(false)}/>

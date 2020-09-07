@@ -9,7 +9,7 @@ const DescriptionAboutMe = () => {
         <div className='aboutContainer'>
             <h1 className='aboutTitleDescription'>Acerca de mi</h1>
             <p className='aboutDescription'>
-                Hola mundo!, Soy Nadia Gincoff y mi objetivo como desarrolladora web, es hacer diseños creativos y tecnológicamente avanzados.<br/>Con un enfoque de alta motivación, busco conseguir resultados dentro del sector tecnológico.
+                Soy Nadia Gincoff y mi objetivo como desarrolladora web, es hacer diseños creativos y tecnológicamente avanzados.<br/>Con un enfoque de alta motivación, busco conseguir resultados dentro del sector tecnológico.
                 <br />Durante mi experiencia en 'Laboratoria' he conseguido adquirir una serie de habilidades, <br></br>incluyendo la colaboración ágil y la resolución de problemas e imprevistos de manera autónoma.
             </p>
         </div>

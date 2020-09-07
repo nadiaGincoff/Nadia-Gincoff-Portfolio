@@ -5,14 +5,31 @@ import LinkedinIcon from "../img/icon-ldin2.png"
 import './Home.css'
 import Footer from './Footer'
 import Header from './Header'
+import Lottie from 'react-lottie'
+import animationData from '../lotties/animation-portfolio.json'
 
-const PortfolioPhoto = () => {
+const AnimationPortfolio = () => {
+
+    const defaultOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: animationData,
+        rendererSettings: {
+          preserveAspectRatio: "xMidYMid slice"
+        }
+    };
+    
     return (
-        <div className='containerPhoto'>
-            <img src={Photo} alt='HomesPhoto'/>
-        </div>
+      <div>
+        <Lottie 
+          options={defaultOptions}
+          height={600}
+          width={600}
+        />
+      </div>
     )
 }
+ 
 
 const HomeDescription = () => {
     return (
@@ -24,8 +41,8 @@ const HomeDescription = () => {
                 {/* <span className='h1Styles'></span> */}
             </div>
              <div className='containerIcon'>
-                <a href='https://github.com/nadiaGincoff' target='_blank' rel='noopener noreferrer'><img src={GitHubIcon} alt='icon-github' className='icon'></img></a>
-                <a href='https://www.linkedin.com/in/nadia-ginc/' target='_blank' rel='noopener noreferrer'><img src={LinkedinIcon} alt='icon-lkdinL.{}65' className='iconSpace'></img></a>
+                <a href='https://github.com/nadiaGincoff' target='_blank' rel='noopener noreferrer'><img src={GitHubIcon} alt='icon-github' className='iconGit'></img></a>
+                <a href='https://www.linkedin.com/in/nadia-ginc/' target='_blank' rel='noopener noreferrer'><img src={LinkedinIcon} alt='icon-lkdin' className='iconSpace'></img></a>
              </div>
         </div>
     )
@@ -38,7 +55,11 @@ const Home = () => {
                 <Header />
             </div>
             <div className='containerDescription'>
-                <HomeDescription />                <PortfolioPhoto />
+                <HomeDescription />                
+                {/* <PortfolioPhoto /> */}
+                <div className='containerAnimation'>
+                    <AnimationPortfolio />
+                </div>
             </div>
             <div>
                 <Footer />

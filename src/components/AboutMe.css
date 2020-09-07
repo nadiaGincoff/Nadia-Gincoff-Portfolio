@@ -32,6 +32,10 @@
 }
 
 @media (min-width: 600px) and (max-width: 1024px) { 
+    .aboutContainer {
+        margin-inline-start: 15%;
+        margin-inline-end: 15%; 
+    }
     .aboutTitleDescription {
         font-size: 2em;
         margin-top: 3em;

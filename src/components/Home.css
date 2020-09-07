@@ -6,7 +6,7 @@
 
 body {
     font-family: '"Montserrat", sans-serif';
-    color: rgb(212, 212, 212);
+    color:  white;
     background: black;
 }
 
@@ -20,7 +20,7 @@ body {
 }
 
 .containerDescription{
-    margin: 0 15em 10em 15em;
+    margin: -2em 10em 15em 12em;
 }
 
 .containerPhoto > img {
@@ -28,9 +28,13 @@ body {
     border-radius: 40%;
 }
 
+.containerAnimation {
+    margin-top: 5em;
+}
+
 .homeDescriptionStyles {
     font-family: "Montserrat", sans-serif;
-    margin-top: 20em;
+    margin-top: 15em;
 }
 
 .h5Styles {
@@ -40,7 +44,7 @@ body {
 
 .h1Styles {
     font-family: "Montserrat", sans-serif;
-    font-size: 4em;
+    font-size: 5em;
     font-weight: 900;
 }
 
@@ -49,19 +53,36 @@ body {
     /* justify-content: space-around; */
 }
 
-.icon {
-    width: 40px;
+.iconGit {
+    width: 2.5em;
     padding-left: 10px;
 }
 
 .iconSpace {
-    width: 40px;
+    width: 2.5em;
     padding-left: 10px;
+}
+
+@media only screen and (max-width: 600px) and (min-width: 400px)  {
+   
+    .homeDescriptionStyles {
+        margin-inline-start: 10%;
+    }
+    .containerAnimation {
+        margin-top: -20%;
+        align-self: center;
+    }
+    .containerIcon {
+        margin-inline-start: 10%;
+    }
+    .iconGit {
+        width: 2em;
+    }
 }
 
 @media screen and (max-width: 600px) {
     body {
-        color: rgb(212, 212, 212)
+        color: white;
     }
     .containerDescription {
         display: flex;
@@ -70,6 +91,7 @@ body {
     }
 
     .homeDescriptionStyles {
+       
         margin-top: 3em;
     }
 
@@ -80,7 +102,7 @@ body {
     }
 
     .h1Styles {
-        font-size: 2em;
+        font-size: 1.8em;
         font-weight: 600;
     }
 
@@ -89,15 +111,21 @@ body {
         margin-left: 6em;
     }
 
-    .icon {
+    .iconGit {
         width: 2em;
-        margin-left: -0.5em;
+        margin-left: 0em;
+        padding-left: 0px;
     }
-    
     .iconSpace {
-        width: 2em;
-        padding-left: 10px;
+        width:2em;
+        margin-inline-start: 0.5em;
+        padding-left: 0;
     }
+    .containerAnimation {
+        margin-top: -10%;
+        align-self: center;
+        
+    }   
 }
   
 @media (min-width: 600px) and (max-width: 1024px) { 
@@ -108,6 +136,7 @@ body {
     }
 
     .homeDescriptionStyles {
+        margin-inline-start: 10%;
         margin-top: 5em;
     }
 
@@ -115,12 +144,23 @@ body {
         width: 18em;    
         margin-left: 60%;
     }
-      .containerPhoto > img {
+    .containerPhoto > img {
         width: 15em;   
     }
     
     .h5Styles {
         font-size: 1em;
         padding-left: 0;
+    }
+    .h1Styles {
+        font-size: 2.5em;
+    }
+    .containerAnimation {
+        margin-top: -15%;
+        margin-left: 10%;
+        
+    }   
+    .containerIcon {
+        margin-inline-start: 9%;
     }
 }

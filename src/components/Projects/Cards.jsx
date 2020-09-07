@@ -14,22 +14,28 @@ const flavorsDescription = ` Red social para compartir recetas, realizado con
     Javascript y Firebase`
 
 const hrefMdLinks = 'https://github.com/nadiaGincoff/SCL013-md-links';
+const hrefBurgerQueen = 'https://github.com/nadiaGincoff/burguer-queen';
+const hrefFlavors = 'https://github.com/nadiaGincoff/SCL013-social-network';
+
+const plusMdLinks = 'https://www.npmjs.com/package/ne-md-links';
+const plusBurgerQueen = 'https://project-burguer-queen.web.app';
+const plusFlavors = 'https://nadiagincoff.github.io/SCL013-social-network/src/index.html';
 
 const Cards = () => {
     return (
         <div className="container-fluid d-flex justify-content-center">
             <div className="row">
                 <div className="col-md-3">
-                    <Card img={project} title={`Proyecto Empresa`} description={description} />
+                    <Card img={project} title={`Proyecto Empresa`} description={description} github={hrefMdLinks} plus={plusFlavors}/>
                 </div>
                 <div className="col-md-3">
-                    <Card img={mdLinks} title={`Markdown-Links`} description={markdownDescription} hrefGitHub={hrefMdLinks}/>
+                    <Card img={mdLinks} title={`Markdown-Links`} description={markdownDescription} github={hrefMdLinks} plus={plusMdLinks}/>
                 </div>
                 <div className="col-md-3">
-                    <Card img={burgerQueen} title={`Burger Queen`} description={burgerQueenDescription} />
+                    <Card img={burgerQueen} title={`Burger Queen`} description={burgerQueenDescription} github={hrefBurgerQueen} plus={plusBurgerQueen}/>
                 </div>
                 <div className="col-md-3">
-                    <Card img={flavors} title={`Flavors`} description={flavorsDescription} />
+                    <Card img={flavors} title={`Flavors`} description={flavorsDescription} github={hrefFlavors} plus={plusFlavors}/>
                 </div>
             </div>
         </div>
