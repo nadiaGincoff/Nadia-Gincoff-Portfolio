@@ -55,6 +55,7 @@
 }
 
 .iconStyle {
+  cursor: pointer;
   width: 40px;
 
 }

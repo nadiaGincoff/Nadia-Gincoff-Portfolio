@@ -10,7 +10,7 @@ const Footer = () => {
         <div className='footerContainerStyle'>
             <Zoom>
                 <div className='childContainerStyle'>
-    <span className='span'>{email}</span>
+                    <span className='span'>{email}</span>
                 </div>
             </Zoom>
         </div>

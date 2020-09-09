@@ -14,7 +14,7 @@ const NavigationBar = () => {
 
     return (
         <div>
-            <div className='buttonStyle'>
+            <div className={'buttonStyle', ''}>
                 <img src={Icon} alt='icon-menu' className='iconStyle' onClick={() => setIsMenuOpen(true)}/>
             </div>
             <Modal isOpen={isMenuOpen} onRequestClose={() => setIsMenuOpen(false)} closeTimeoutMS={2000} className='modalStyle'>
@@ -23,16 +23,16 @@ const NavigationBar = () => {
                 </div>
                     <Fade right cascade>
                         <div className='modalContent'>
-                            <Link to='/' style={{textDecoration: 'none'}} >
+                            <Link to='/' style={{ textDecoration: 'none' }} >
                                <p className='modalItem'>INICIO</p>
                             </Link>
-                            <Link to='/about' style={{textDecoration: 'none'}} >
+                            <Link to='/about' style={{ textDecoration: 'none' }} >
                                <p className='modalItem'>SOBRE MI</p>
                             </Link>
-                            <Link to='/projects' style={{textDecoration: 'none'}} >
+                            <Link to='/projects' style={{ textDecoration: 'none' }} >
                                 <p className='modalItem'>PROYECTOS</p>
                             </Link>   
-                            <Link to='/contact' style={{textDecoration: 'none'}} >
+                            <Link to='/contact' style={{ textDecoration: 'none' }} >
                                 <p className='modalItem'>CONTACTO</p>
                             </Link>
                         </div>

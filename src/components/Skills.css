@@ -10,8 +10,9 @@
 }
 
 .iconSkills {
-    width: 4em;
-    margin-right: 3%;
+    width: 5em;
+    margin-right: 0%;
+    margin-inline-start: 1em;
 }
 
 .iconContainer {
@@ -30,7 +31,8 @@
         margin-top: 3em;
     }
     .iconSkills {
-        width: 3rem;
+        width: 2rem;
+        margin-inline-start: 0.5em;
     }
 }
 
@@ -41,5 +43,6 @@
     }
     .iconSkills {
         width: 3em;
+
     }
 }

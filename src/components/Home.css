@@ -84,6 +84,7 @@ body {
     body {
         color: white;
     }
+
     .containerDescription {
         display: flex;
         flex-direction: column;
@@ -91,7 +92,6 @@ body {
     }
 
     .homeDescriptionStyles {
-       
         margin-top: 3em;
     }
 
@@ -124,7 +124,6 @@ body {
     .containerAnimation {
         margin-top: -10%;
         align-self: center;
-        
     }   
 }
   

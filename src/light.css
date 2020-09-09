@@ -1,0 +1,92 @@
+body.dark-mode {
+    background: white;
+}
+
+body.dark-mode .h1Styles {
+    color: black;
+}
+
+body.dark-mode .h5Styles {
+    color: black;
+}
+
+body.dark-mode .title {
+    color: black;
+}
+
+body.dark-mode .h5Styles {
+    color: black;
+}
+
+body.dark-mode .modalStyle {
+    background: white;
+
+}
+
+body.dark-mode .modalItem {
+    color: black;
+}
+
+body.dark-mode .modalItem::after {
+    background: black;
+}
+
+body.dark-mode .aboutContainer {
+    color: black
+}
+
+body.dark-mode .card {
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+}
+
+body.dark-mode .projectTitle {
+    color: black;
+}
+
+body.dark-mode .containerInfo {
+    color: black;
+}
+
+
+body.dark-mode .description {
+    color: black;
+}
+
+body.dark-mode .span {
+    color: black;
+}
+
+body.dark-mode .footerContainerStyle {
+
+    border-top: 2px solid black;
+
+}
+
+body.dark-mode .iconGit {
+    filter: invert(100%)
+}
+
+body.dark-mode .iconSpace {
+    filter: invert(100%)
+}
+
+body.dark-mode .iconStyle {
+    filter: invert(100%)
+}
+
+body.dark-mode .icon {
+    filter: invert(100%)
+}
+
+body.dark-mode .iconSeparation {
+    filter: invert(100%)
+}
+
+body.dark-mode .svgGit {
+    filter: invert(100%)
+}
+
+body.dark-mode .logoStyle{
+    filter: invert(100%)
+}
